@@ -62,7 +62,7 @@ const vote = {
     space, // space name
     timestamp: parseInt((Date.now() / 1e3).toFixed()),
     proposal, // proposal Id
-    choice: 1, // choice at the proposal (first answer - 1, second answer - 2 ...)
+    choice, // choice at the proposal (first answer - 1, second answer - 2 ...)
     reason: "",
     app: "snapshot",
     metadata: "{}"
