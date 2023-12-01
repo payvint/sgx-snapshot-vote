@@ -29,7 +29,24 @@ VOTE=1
 
 Create `.env` file and input these parameters
 
-# Typed data hash
+# Sign and Send
+## Fast usage
+
+Modify these params in `sign-sgx-vote.sh` with your data:
+
+```
+URL_SGX_WALLET=<skale-sgx-server:1026>
+CERT=$HOME/sgx.crt
+CERT_KEY=$HOME/sgx.key
+KEY_NAME="NEK:<your-key>"
+```
+
+Run `bash sign-sgx-vote.sh`
+
+Special thanks for major contribution with supporting @easy2stake
+
+## Step by step usage
+### Typed data hash
 
 After you input your parameters execute the next command
 `node hash.js`
@@ -40,7 +57,7 @@ Result hash which need to be signed by SGX:
 YOUR_HASH
 ```
 
-# Sign by SGX
+### Sign by SGX
 
 Copy the result hash from the previous step and sign by the SGX
 
@@ -66,9 +83,9 @@ If everything is good the following logs would be shown:
 }
 ```
 
-# Add signature and send
+### Add signature and send
 
-## Add signature to env
+#### Add signature to env
 
 Add your r, s, and v value to the `.env` file like this:
 
@@ -84,7 +101,7 @@ S=S_VALUE
 V=V_VALUE
 ```
 
-## Send to snapshot
+#### Send to snapshot
 
 Execute the following command:
 `node send.js`
