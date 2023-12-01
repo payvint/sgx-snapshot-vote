@@ -54,11 +54,17 @@ async function checkAndSend() {
         sig: signature,
         data: result
     };
-    console.log("/nSending this envelop");
+    console.log("\nSending this envelop");
     console.log(envelop, "\n");
-    const receipt = await client.send(envelop);
-    console.log("\nReceive receipt:", receipt, "\n");
-    console.log("\nSuccessful!!! Check the vote on Snapshot!\n");
+    try {
+        const receipt = await client.send(envelop);
+        console.log("\nReceive receipt:", receipt, "\n");
+        console.log("\nSuccessful!!! Check the vote on Snapshot!\n");
+    } catch (e) {
+        console.log("\nError:\n");
+        console.log(e);
+        console.log("\nSend envelop failed! \n");
+    }
 }
 
 checkAndSend();

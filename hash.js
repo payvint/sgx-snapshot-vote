@@ -4,7 +4,7 @@ const fs = require('fs').promises;
 
 let validatorAddress = "";
 let proposal = "";
-let space = "skalenetwork.eth";
+let space = "skalenetwotk.eth";
 let choice = 0;
 
 try {
