@@ -43,7 +43,7 @@ KEY_NAME="NEK:<your-key>"
 
 Run `bash sign-sgx-vote.sh`
 
-Special thanks for major contribution with supporting @easy2stake
+Special thanks for major contribution with supporting [@easy2stake](https://github.com/easy2stake)
 
 ## Step by step usage
 ### Typed data hash
