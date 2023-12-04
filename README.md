@@ -25,6 +25,10 @@ VALIDATOR_ADDRESS=0x93B603501aaE5145C97314CF1ABce76a3efd65fB
 SPACE=main
 PROPOSAL_ID=0xebbc76cf6bd1afd7e1271f4339c7c04703dbe8dda78b1a731ffaf126772c0051
 VOTE=1
+
+R=
+S=
+V=
 ```
 
 Create `.env` file and input these parameters
