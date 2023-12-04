@@ -32,7 +32,7 @@ if (process.env.SPACE === "main") {
 }
 
 if (parseInt(process.env.VOTE) === 1 || parseInt(process.env.VOTE) === 2 || parseInt(process.env.VOTE) === 3) {
-    choice = process.env.VOTE;
+    choice = parseInt(process.env.VOTE);
     console.log("Vote:", choice);
 } else {
     console.log("Vote is incorrect, please input VOTE in .env - 1 or 2 or 3");
